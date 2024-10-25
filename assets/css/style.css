@@ -21,6 +21,23 @@ a {
   text-decoration: none;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.heading-lv2 {
+  color: #171100;
+
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27x;
+  letter-spacing: -0.76px;
+}
+
 .btn {
   display: inline-block;
   min-width: 118px;
@@ -35,6 +52,7 @@ a {
 }
 
 .btn:hover {
+  cursor: pointer;
   opacity: 0.9;
 }
 
@@ -267,4 +285,253 @@ a {
 
 .hero .start strong:nth-child(2) {
   margin-right: 28px;
+}
+
+.popular {
+  padding: 65px;
+  margin-top: 135px;
+}
+
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-top .controls {
+  display: flex;
+  gap: 18px;
+}
+
+.popular-top .desc {
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+
+.popular-top .controls-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.popular-top .controls-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.popular .course-list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+
+.popular .course-item {
+  flex: 1;
+  border: 1px solid #e2dfda;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.popular .course-item:hover {
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  border: 1px 0 transparent;
+  background-color: #fff;
+}
+
+.popular .course-item .thumb {
+  width: 100%;
+  border-radius: 12px 12px;
+  height: 278px;
+  object-fit: cover;
+}
+
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+.popular .course-item .foot,
+.popular .course-item .rating,
+.popular .course-item .head {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.popular .course-item .title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #171100;
+}
+
+.popular .rating .value {
+  margin-left: 6px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #fea31b;
+}
+
+.popular .course-item .desc {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #5f5b53;
+}
+
+.popular .course-item .foot {
+  margin-top: 12px;
+}
+
+.popular .course-item .price {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+}
+
+.popular .course-item .btn-book {
+  border: none;
+}
+
+.popular .course-item .btn-book:hover {
+  background: var(--primary-color);
+}
+
+/* =============Feedback============= */
+.feedback {
+  margin-top: 135px;
+  padding: 96px;
+  background-color: #2e2100;
+}
+
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
+.feedback-item {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.feedback-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-item .info .member-name {
+  color: rgba(247, 247, 247, 1);
+
+  font-family: var(--font-heading);
+  margin-top: 18px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+}
+
+.feedback-item .info .desc {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: rgba(191, 188, 178, 1);
+}
+
+.feedback-item .dots {
+  display: flex;
+  margin-top: 28px;
+  gap: 6px;
+}
+
+.feedback-item .dot {
+  background: rgba(99, 71, 0, 1);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.feedback-item .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+
+.feedback .content {
+  width: 66%;
+  margin-left: auto;
+}
+
+.feedback-item blockquote {
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 40px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* ============Features=========== */
+.features {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+
+.features .images {
+  display: flex;
+  gap: 30px;
+}
+
+.features .images img {
+  width: 270px;
+  height: 405px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.features .lower {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 41%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.features .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .desc {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(95, 91, 83, 1);
+}
+
+.features .cta-btn {
+  width: 137px;
+  height: 50px;
+  margin-top: 32px;
+  background-color: var(--primary-color);
 }
